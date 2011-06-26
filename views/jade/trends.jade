@@ -1,0 +1,7 @@
+h1= title
+div#tweets
+  ul
+    - trends.forEach(function(trend){
+      li
+        a(href="https://twitter.com/#!/search/" + trend.encoded)= trend.name
+    - })
